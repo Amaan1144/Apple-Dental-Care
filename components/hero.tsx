@@ -10,7 +10,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100"></div>
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
           style={{
             backgroundImage: "url('/images/dental-doctor-background.jpg')",
           }}
