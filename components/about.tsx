@@ -15,7 +15,7 @@ export function About() {
     {
       icon: Clock,
       title: "Flexible Hours",
-      description: "Mon-Sun: 09AM-10PM for your convenience",
+      description: "Mon-Sun: 09AM-08PM for your convenience",
     },
     {
       icon: Shield,

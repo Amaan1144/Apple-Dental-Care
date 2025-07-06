@@ -14,7 +14,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center">
-                <span className="text-2xl"></span>
+                <span className="text-2xl"><img src="/logo.png" className="w-[30px]" alt="apple"/></span>
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Apple Dental Care</h3>
@@ -61,7 +61,7 @@ export function Footer() {
             <div className="space-y-3">
               <div>
                 <span className="text-slate-300">Monday - Sunday</span>
-                <div className="text-emerald-400 font-semibold">09:00 AM - 10:00 PM</div>
+                <div className="text-emerald-400 font-semibold">09:00 AM - 08:00 PM</div>
               </div>
               <div className="mt-6 bg-emerald-500/10 rounded-lg p-4 border border-emerald-500/20">
                 <p className="text-emerald-300 font-semibold text-sm">🎁 NEW PATIENT SPECIAL</p>

@@ -35,7 +35,7 @@ export function Header() {
           <div className="flex items-center space-x-3">
             <div className="relative">
               <div className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-900 rounded-xl flex items-center justify-center">
-                <span className="text-2xl text-white"></span>
+                <span className="text-2xl text-white"><img src="/logo.png" className="w-[30px]" alt="apple"/></span>
               </div>
               <div className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full"></div>
             </div>
@@ -50,7 +50,7 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-6">
             {/* <div className="flex items-center space-x-2 text-sm text-slate-600">
               <Clock className="w-4 h-4" />
-              <span>Mon-Sun: 09AM-10PM</span>
+              <span>Mon-Sun: 09AM-08PM</span>
             </div> */}
             <div className="flex items-center space-x-2 text-sm text-slate-600">
               <Phone className="w-4 h-4" />

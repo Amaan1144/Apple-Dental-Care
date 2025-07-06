@@ -68,7 +68,7 @@ export function Hero() {
                 <Clock className="w-5 h-5 text-slate-600" />
                 <div>
                   <p className="text-sm font-medium text-slate-900">Working Hours</p>
-                  <p className="text-xs text-slate-500">Mon-Sun: 09AM-10PM</p>
+                  <p className="text-xs text-slate-500">Mon-Sun: 09AM-08PM</p>
                 </div>
               </div>
             </div>

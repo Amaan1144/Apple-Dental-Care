@@ -213,7 +213,7 @@ export function Contact() {
                     <h3 className="font-semibold text-white mb-2">Working Hours</h3>
                     <div className="text-slate-300 text-sm space-y-1">
                       <p>Monday - Sunday</p>
-                      <p className="font-semibold text-emerald-400">09:00 AM - 10:00 PM</p>
+                      <p className="font-semibold text-emerald-400">09:00 AM - 08:00 PM</p>
                     </div>
                   </div>
                 </div>
