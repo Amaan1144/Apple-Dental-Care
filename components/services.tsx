@@ -5,31 +5,93 @@ export function Services() {
   const services = [
     {
       name: "Complete Checkup",
-      price: "Free",
       badge: "Popular",
       description: "Comprehensive dental examination and consultation",
     },
-    { name: "Professional Cleaning", price: "₹150", badge: null, description: "Deep cleaning and plaque removal" },
-    { name: "Cavity Filling", price: "₹100", badge: null, description: "Quality composite and amalgam fillings" },
-    { name: "Root Canal Treatment", price: "₹800", badge: "Advanced", description: "Pain-free endodontic treatment" },
+    { name: "Professional Cleaning", badge: null, description: "Deep cleaning and plaque removal" },
+    { name: "Cavity Filling", badge: null, description: "Quality composite and amalgam fillings" },
+    { name: "Root Canal Treatment", badge: "Advanced", description: "Pain-free endodontic treatment" },
     {
       name: "Teeth Whitening",
-      price: "₹250",
       badge: "Trending",
       description: "Professional whitening for brighter smile",
     },
-    { name: "Tooth Extraction", price: "₹999", badge: null, description: "Safe and painless tooth removal" },
-    { name: "Dental Crown", price: "₹2500", badge: null, description: "Premium quality crowns and caps" },
-    { name: "Complete Dentures", price: "₹15000", badge: null, description: "Custom-fitted full and partial dentures" },
+    { name: "Tooth Extraction", badge: null, description: "Safe and painless tooth removal" },
+    { name: "Dental Crown", badge: null, description: "Premium quality crowns and caps" },
+    { name: "Complete Dentures", badge: null, description: "Custom-fitted full and partial dentures" },
     {
       name: "Orthodontic Treatment",
-      price: "₹25000",
       badge: "Premium",
       description: "Braces and teeth alignment solutions",
     },
-    { name: "Scaling & Polishing", price: "₹500", badge: null, description: "Professional deep cleaning service" },
-    { name: "Digital X-Ray", price: "Free", badge: "Free", description: "Advanced digital radiography" },
-    { name: "Emergency Care", price: "Varies", badge: "24/7", description: "Immediate dental emergency treatment" },
+    { name: "Scaling & Polishing", badge: null, description: "Professional deep cleaning service" },
+    { name: "Digital X-Ray", badge: "Free", description: "Advanced digital radiography" },
+    { name: "Emergency Care", badge: "24/7", description: "Immediate dental emergency treatment" },
+    {
+      name: "Dental Implants",
+      badge: null,
+      description: "Permanent tooth replacement with implants",
+    },
+    {
+      name: "Pyorrhea Treatment",
+      badge: null,
+      description: "Specialized treatment for gum disease (pyorrhea)",
+    },
+    {
+      name: "Soft Denture",
+      badge: null,
+      description: "Comfortable flexible dentures for sensitive gums",
+    },
+    {
+      name: "Sensitive Teeth Treatment",
+      badge: null,
+      description: "Relief from hot and cold sensitivity in teeth",
+    },
+    {
+      name: "Wisdom Tooth Removal",
+      badge: null,
+      description: "Painless extraction of impacted wisdom teeth",
+    },
+    {
+      name: "Mouth Ulcer Treatment",
+      badge: null,
+      description: "Relief and healing of painful mouth ulcers",
+    },
+    {
+      name: "Tooth Discoloration Treatment",
+      badge: null,
+      description: "Correction of stained or discolored teeth",
+    },
+    {
+      name: "Ultrasonic Cleaning",
+      badge: null,
+      description: "Teeth cleaning using advanced ultrasonic machine",
+    },
+    {
+      name: "Fixed & Removable Dentures",
+      badge: null,
+      description: "Custom fixed and removable denture solutions",
+    },
+    {
+      name: "Tooth Jewelry",
+      badge: null,
+      description: "Decorative gems applied to teeth for a stylish look",
+    },
+    {
+      name: "Bleeding Gums Treatment",
+      badge: null,
+      description: "Treatment to stop bleeding and strengthen gums",
+    },
+    {
+      name: "Bad Breath Treatment",
+      badge: null,
+      description: "Solutions for chronic bad breath issues",
+    },
+    {
+      name: "Loose Teeth Stabilization",
+      badge: null,
+      description: "Treatment to fix and stabilize mobile teeth",
+    }
   ]
 
   return (
@@ -71,7 +133,7 @@ export function Services() {
                     </Badge>
                   )}
                 </div>
-                <div className="text-2xl font-bold text-slate-900">{service.price}</div>
+                {/* <div className="text-2xl font-bold text-slate-900">{service.price}</div> */}
               </CardHeader>
               <CardContent>
                 <p className="text-slate-600 text-sm leading-relaxed">{service.description}</p>

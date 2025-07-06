@@ -9,13 +9,13 @@ export function About() {
     },
     {
       icon: Users,
-      title: "500+ Patients",
+      title: "5000+ Patients",
       description: "Successfully treated patients with 99% satisfaction rate",
     },
     {
       icon: Clock,
       title: "Flexible Hours",
-      description: "Mon-Sat: 10AM-8PM, Sunday: 10AM-2PM for your convenience",
+      description: "Mon-Sun: 09AM-10PM for your convenience",
     },
     {
       icon: Shield,

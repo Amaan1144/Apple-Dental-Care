@@ -6,18 +6,40 @@ import { Phone, MapPin, Clock, Star } from "lucide-react"
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100"></div>
+      {/* Background Image with Low Opacity */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100"></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35"
+          style={{
+            backgroundImage: "url('/images/dental-doctor-background.jpg')",
+          }}
+        ></div>
+        {/* Fallback pattern if image doesn't load */}
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="dental-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="2" fill="#e2e8f0" opacity="0.3" />
+                <path d="M8 8 L12 12 M12 8 L8 12" stroke="#e2e8f0" strokeWidth="0.5" opacity="0.2" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dental-pattern)" />
+          </svg>
+        </div>
+      </div>
+
+      {/* Gradient Overlays */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-slate-200/30 to-transparent rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-gradient-to-tr from-emerald-100/40 to-transparent rounded-full blur-3xl"></div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-20">
+      <div className="container mx-auto px-4 relative z-10 pt-20 pb-2">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <div className="space-y-4">
+            <div className="space-y-4 mt-2">
               <div className="inline-flex items-center px-4 py-2 bg-emerald-50 rounded-full border border-emerald-200">
                 <Star className="w-4 h-4 text-emerald-600 mr-2" />
-                <span className="text-sm font-medium text-emerald-700">Trusted by 500+ Patients</span>
+                <span className="text-sm font-medium text-emerald-700">Trusted by 5000+ Patients</span>
               </div>
 
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
@@ -35,18 +57,18 @@ export function Hero() {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
-              <div className="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+              <div className="flex items-center space-x-3 p-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
                 <MapPin className="w-5 h-5 text-slate-600" />
                 <div>
                   <p className="text-sm font-medium text-slate-900">Location</p>
-                  <p className="text-xs text-slate-500">Vijoria Road, Near Maya Hospital, Nawabganj (West), Bareilly</p>
+                  <p className="text-xs text-slate-500">Vijauria Road, Opposite Maya Hospital, Nawabganj, Bareilly</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-sm border border-slate-200">
+              <div className="flex items-center space-x-3 p-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
                 <Clock className="w-5 h-5 text-slate-600" />
                 <div>
                   <p className="text-sm font-medium text-slate-900">Working Hours</p>
-                  <p className="text-xs text-slate-500">Mon-Sat: 10AM-8PM | Sun: 10AM-2PM</p>
+                  <p className="text-xs text-slate-500">Mon-Sun: 09AM-10PM</p>
                 </div>
               </div>
             </div>
@@ -63,7 +85,7 @@ export function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-slate-300 hover:bg-slate-50 px-8 py-6 rounded-xl bg-transparent"
+                className="border-2 border-slate-300 hover:bg-slate-50 px-8 py-6 rounded-xl bg-white/80 backdrop-blur-sm"
                 onClick={() => {
                   const element = document.getElementById("services")
                   if (element) {
@@ -77,7 +99,7 @@ export function Hero() {
           </div>
 
           <div className="relative">
-            <div className="relative bg-white rounded-3xl shadow-2xl p-8 border border-slate-200">
+            <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-slate-200">
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-emerald-500 rounded-full"></div>
               <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-slate-900 rounded-full"></div>
@@ -94,12 +116,12 @@ export function Hero() {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="p-3 bg-slate-50 rounded-lg">
-                    <p className="text-2xl font-bold text-slate-900">10+</p>
+                  <div className="p-3 bg-slate-50/80 backdrop-blur-sm rounded-lg">
+                    <p className="text-2xl font-bold text-slate-900">15+</p>
                     <p className="text-xs text-slate-500">Years Experience</p>
                   </div>
-                  <div className="p-3 bg-slate-50 rounded-lg">
-                    <p className="text-2xl font-bold text-slate-900">500+</p>
+                  <div className="p-3 bg-slate-50/80 backdrop-blur-sm rounded-lg">
+                    <p className="text-2xl font-bold text-slate-900">5000+</p>
                     <p className="text-xs text-slate-500">Happy Patients</p>
                   </div>
                 </div>
@@ -110,6 +132,10 @@ export function Hero() {
                 </div>
               </div>
             </div>
+
+            {/* Additional floating elements for depth */}
+            <div className="absolute -top-8 -left-8 w-16 h-16 bg-emerald-100/50 rounded-full blur-xl"></div>
+            <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-slate-200/50 rounded-full blur-lg"></div>
           </div>
         </div>
       </div>

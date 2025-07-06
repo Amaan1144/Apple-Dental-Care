@@ -8,19 +8,19 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Apple Dental Care - Expert Dental Solutions | Dr. M.S. Ansari",
   description:
-    "Complete dental care solutions in Nawabganj (West). Expert treatment by Dr. M.S. Ansari with modern equipment. Book your appointment today!",
+    "Complete dental care solutions in Nawabganj, Bareilly. Expert treatment by Dr. M.S. Ansari with modern equipment. Book your appointment today!",
   keywords: "dental care, dentist, Nawabganj, teeth cleaning, root canal, dental clinic, Dr M.S. Ansari",
   authors: [{ name: "Apple Dental Care" }],
   icons: {
     icon: [
       {
-        url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' fontSize='90'>🦷</text></svg>",
+        url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='white'></text></svg>",
         type: "image/svg+xml",
       },
     ],
     apple: [
       {
-        url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' fontSize='90'>🦷</text></svg>",
+        url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='white'></text></svg>",
         type: "image/svg+xml",
       },
     ],
@@ -48,7 +48,7 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' fontSize='90'>🦷</text></svg>"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='white'></text></svg>"
           type="image/svg+xml"
         />
       </head>

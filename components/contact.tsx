@@ -30,12 +30,12 @@ export function Contact() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          access_key: "c770df8a-84ad-4623-a548-d49fca6cac7a", // You'll need to get this from web3forms.com (it's free)
+          access_key: "1d80f664-761a-4ff9-90a3-bbdc2a12b121",
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          to: "ansariamaan854@gmail.com",
+          to: "farhanchaudhary35@gmail.com",
           subject: "New inquiry from Apple Dental Care website",
         }),
       })
@@ -169,9 +169,9 @@ export function Contact() {
                   <div>
                     <h3 className="font-semibold text-white mb-2">Visit Our Clinic</h3>
                     <p className="text-slate-300 text-sm leading-relaxed">
-                      Vijoria Road, Near Maya Hospital,
+                      Vijauria Road, Opposite Maya Hospital,
                       <br />
-                      Nawabganj (West), Bareilly
+                      Nawabganj, Bareilly
                     </p>
                   </div>
                 </div>
@@ -212,10 +212,8 @@ export function Contact() {
                   <div>
                     <h3 className="font-semibold text-white mb-2">Working Hours</h3>
                     <div className="text-slate-300 text-sm space-y-1">
-                      <p>Monday - Saturday</p>
-                      <p className="font-semibold text-emerald-400">10:00 AM - 8:00 PM</p>
-                      <p>Sunday</p>
-                      <p className="font-semibold text-emerald-400">10:00 AM - 2:00 PM</p>
+                      <p>Monday - Sunday</p>
+                      <p className="font-semibold text-emerald-400">09:00 AM - 10:00 PM</p>
                     </div>
                   </div>
                 </div>
